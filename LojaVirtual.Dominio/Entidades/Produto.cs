@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LojaVirtual.Dominio.Entidade
+namespace LojaVirtual.Dominio.Entidades
 {
     public class Produto
     {

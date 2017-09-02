@@ -1,4 +1,4 @@
-﻿using LojaVirtual.Dominio.Entidade;
+﻿using LojaVirtual.Dominio.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

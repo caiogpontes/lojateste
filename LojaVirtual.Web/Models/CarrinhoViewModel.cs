@@ -1,4 +1,4 @@
-﻿using LojaVirtual.Dominio.Entidade;
+﻿using LojaVirtual.Dominio.Entidades;
 
 namespace LojaVirtual.Web.Models
 {
