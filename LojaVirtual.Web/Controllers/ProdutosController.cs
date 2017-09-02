@@ -15,6 +15,7 @@ namespace LojaVirtual.Web.Controllers
         // GET: Produtos
         public ActionResult Index(int pagina = 1)
         {
+            _repositorio = new ProdutosRepositorio();
 
             var produtos = _repositorio.Produtos
                 .OrderBy(p => p.Descricao)
