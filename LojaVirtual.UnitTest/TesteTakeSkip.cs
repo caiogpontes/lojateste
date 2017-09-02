@@ -8,7 +8,7 @@ using LojaVirtual.Web.HtmlHelpers;
 namespace LojaVirtual.UnitTest
 {
     [TestClass]
-    public class UnitTest1
+    public class TesteTakeSkip
     {
         [TestMethod]
         public void Take()
