@@ -1,6 +1,8 @@
 ﻿using LojaVirtual.Dominio.Entidades;
+using LojaVirtual.Web.App_Start;
 using LojaVirtual.Web.Infraestrutura;
 using System.Web.Mvc;
+using System.Web.Optimization;
 using System.Web.Routing;
 
 namespace LojaVirtual.Web
@@ -11,6 +13,7 @@ namespace LojaVirtual.Web
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             ModelBinders.Binders.Add(typeof(Carrinho), new CarrinhoModelBinder());
         }
