@@ -20,11 +20,10 @@ namespace LojaVirtual.Web.App_Start
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/bootstrap.css",
                 "~/Content/bootstrap-theme.css",
-                "~/ContentErroEstilo.css",
-                "~/Site.css"
+                "~/Content/ErroEstilo.css"
                 ));
 
-            BundleTable.EnableOptimizations = true;
+            BundleTable.EnableOptimizations = false;
         }
     }
 }
