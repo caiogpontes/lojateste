@@ -41,6 +41,14 @@ namespace LojaVirtual.Web.Controllers
         //    return View(model);
         //}
 
+        [Route("DetalhesProduto/{id}/{produto}")]
+        public ViewResult Detalhes(int id)
+        {
+            _repositorio = new ProdutosRepositorio();
+            Produto produto = _repositorio.ObterProduto(id);
+            return View(produto);
+        }
+
 
         public ViewResult ListaProdutos(string categoria)
         {
@@ -65,6 +73,7 @@ namespace LojaVirtual.Web.Controllers
 
             return View(model);
         }
+
 
         [Route("Vitrine/ObterImagem/{produtoid}")]
         public FileContentResult ObterImagem(int produtoId)
