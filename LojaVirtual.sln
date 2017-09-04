@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaVirtual.Web", "LojaVirt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaVirtual.UnitTest", "LojaVirtual.UnitTest\LojaVirtual.UnitTest.csproj", "{F465E146-7255-4B4D-9ABC-7B4076CBB7FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaVirtual.Web.V2", "LojaVirtual.Web.V2\LojaVirtual.Web.V2.csproj", "{55FE4A44-5EEE-4892-A699-CEB10C5281C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F465E146-7255-4B4D-9ABC-7B4076CBB7FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F465E146-7255-4B4D-9ABC-7B4076CBB7FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F465E146-7255-4B4D-9ABC-7B4076CBB7FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55FE4A44-5EEE-4892-A699-CEB10C5281C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55FE4A44-5EEE-4892-A699-CEB10C5281C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55FE4A44-5EEE-4892-A699-CEB10C5281C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55FE4A44-5EEE-4892-A699-CEB10C5281C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
