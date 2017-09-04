@@ -5,9 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace LojaVirtual.Web.Areas.Administrativo.Controllers
 {
+    [Authorize]
     public class ProdutoController : Controller
     {
         private ProdutosRepositorio _repositorio;
@@ -31,10 +33,17 @@ namespace LojaVirtual.Web.Areas.Administrativo.Controllers
         }
 
         [HttpPost]
-        public ActionResult Alterar(Produto produto)
+        public ActionResult Alterar(Produto produto, HttpPostedFileBase image = null)
         {
             if (ModelState.IsValid)
-            {
+            { 
+                if (image != null)
+                {
+                    produto.ImagemMimeType = image.ContentType;
+                    produto.Imagem = new byte[image.ContentLength];
+                    image.InputStream.Read(produto.Imagem, 0, image.ContentLength);
+                }
+
                 _repositorio = new ProdutosRepositorio();
                 _repositorio.Salvar(produto);
 
@@ -82,6 +91,27 @@ namespace LojaVirtual.Web.Areas.Administrativo.Controllers
             }
 
             return Json(mensagem, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult Logoff()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index");
+        }
+
+        public FileContentResult ObterImagem(int produtoId)
+        {
+            _repositorio = new ProdutosRepositorio();
+            Produto prod = _repositorio.Produtos
+                .FirstOrDefault(p => p.ProdutoId == produtoId);
+
+            if (prod != null)
+            {
+                return File(prod.Imagem, prod.ImagemMimeType);
+            }
+
+
+            return null;
         }
     }
 }

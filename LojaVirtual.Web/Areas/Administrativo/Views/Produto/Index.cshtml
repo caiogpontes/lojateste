@@ -12,6 +12,18 @@
 <div class="panel panel-default">
     <div class="panel-heading">
         <h3>Loja Virtual - Administrivo - Produtos</h3>
+
+        @if (Request.IsAuthenticated)
+        {
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="icon-user">
+                </i>Olá, @User.Identity.Name<span class="caret"></span>
+            </a>
+
+            @Html.ActionLink("Log off", "Logoff", "Produto")
+
+        }
+        
     </div>
 
     <div class="panel-body">

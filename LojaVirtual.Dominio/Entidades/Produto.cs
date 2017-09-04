@@ -17,7 +17,7 @@ namespace LojaVirtual.Dominio.Entidades
         [Required(ErrorMessage = "Digite o nome do produto")]
         public string Nome { get; set; }
 
-        [DataType(DataType.MultilineText)]
+        [DataType(DataType.MultilineText)]  
         [Required(ErrorMessage = "Digite a descrição")]
         public string Descricao { get; set; }
 
@@ -27,5 +27,9 @@ namespace LojaVirtual.Dominio.Entidades
 
         [Required(ErrorMessage = "Digite a categoria")]
         public string Categoria { get; set; }
+
+        public byte[] Imagem { get; set; }
+
+        public string ImagemMimeType { get; set; }
     }
 }

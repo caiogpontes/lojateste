@@ -73,6 +73,7 @@
     <Compile Include="TesteTakeSkip.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TesteCarrinhoCompras.cs" />
+    <Compile Include="CarrinhoControllerTestes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

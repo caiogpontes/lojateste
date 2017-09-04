@@ -2,6 +2,7 @@
 using System.Web.Mvc;
 using LojaVirtual.Dominio.Repositorio;
 using LojaVirtual.Web.Models;
+using LojaVirtual.Dominio.Entidades;
 
 namespace LojaVirtual.Web.Controllers
 {
@@ -33,6 +34,22 @@ namespace LojaVirtual.Web.Controllers
             };
 
             return View(model);
+        }
+
+        public FileContentResult ObterImagem(int produtoId)
+        {
+            _repositorio = new ProdutosRepositorio();
+
+            Produto prod = _repositorio.Produtos
+                .FirstOrDefault(p => p.ProdutoId == produtoId);
+
+            if (prod != null)
+            {
+                return File(prod.Imagem, prod.ImagemMimeType);
+            }
+
+
+            return null;
         }
     }
 }
