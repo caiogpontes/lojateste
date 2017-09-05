@@ -69,5 +69,8 @@
     <None Include="ScritpLinha.sql" />
     <None Include="ScritpMarca.sql" />
     <None Include="ScritpModalidade.sql" />
+    <None Include="ScriptViewProdutoVitrine.sql" />
+    <None Include="ScriptProduto.sql" />
+    <None Include="ScriptComProdutoModelo.sql" />
   </ItemGroup>
 </Project>
