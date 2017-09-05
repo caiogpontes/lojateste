@@ -153,13 +153,16 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\NavController.cs" />
+    <Compile Include="Controllers\ProdutoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\ImagemHelpers.cs" />
     <Compile Include="HtmlHelpers\InjectPageMetadataAttribute.cs" />
     <Compile Include="HtmlHelpers\StringHelpers.cs" />
+    <Compile Include="Models\ModalidadeSubGrupoViewModel.cs" />
     <Compile Include="Models\ProdutosViewModel.cs" />
+    <Compile Include="Models\SubGrupoCategoriasViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -301,11 +304,17 @@
     <Content Include="Views\Nav\Index.cshtml" />
     <Content Include="Views\Shared\_Marcas.cshtml" />
     <Content Include="Views\Nav\_Nav.cshtml" />
+    <Content Include="Views\Nav\Navegacao.cshtml" />
+    <Content Include="Views\Nav\_NavTresColunas.cshtml" />
+    <Content Include="Views\Nav\_Vitrine.cshtml" />
+    <Content Include="Views\Nav\_TenisCategoria.cshtml" />
+    <Content Include="Views\Nav\_CasualSubGrupo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Categoria\" />
     <Folder Include="Views\Menu\" />
+    <Folder Include="Views\Produto\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
