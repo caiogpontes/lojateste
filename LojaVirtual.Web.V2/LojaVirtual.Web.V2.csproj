@@ -160,6 +160,7 @@
     <Compile Include="Helpers\ImagemHelpers.cs" />
     <Compile Include="HtmlHelpers\InjectPageMetadataAttribute.cs" />
     <Compile Include="HtmlHelpers\StringHelpers.cs" />
+    <Compile Include="Models\CategoriaSubGruposViewModel.cs" />
     <Compile Include="Models\ModalidadeSubGrupoViewModel.cs" />
     <Compile Include="Models\ProdutosViewModel.cs" />
     <Compile Include="Models\SubGrupoCategoriasViewModel.cs" />
@@ -309,6 +310,7 @@
     <Content Include="Views\Nav\_Vitrine.cshtml" />
     <Content Include="Views\Nav\_TenisCategoria.cshtml" />
     <Content Include="Views\Nav\_CasualSubGrupo.cshtml" />
+    <Content Include="Views\Nav\_Suplemento.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
